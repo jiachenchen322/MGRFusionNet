@@ -1,0 +1,30 @@
+[project]
+name = "mgrfusionnet"
+version = "0.1.0"
+description = "Public research code for MGRFusionNet multimodal fusion, interpretability, and simulation workflows."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "numpy>=1.26",
+    "scikit-learn>=1.3",
+    "torch>=2.1",
+    "torch-geometric>=2.4",
+]
+
+# Additional packages needed only by the real-data workflow.
+[project.optional-dependencies]
+full = [
+    "scipy>=1.11",
+    "pandas>=2.1",
+    "h5py>=3.10",
+    "matplotlib>=3.8",
+    "tqdm>=4.66",
+    "captum>=0.7",
+    "torch-scatter",
+    "torch-sparse",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"

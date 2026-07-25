@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.Rhistory
+results/
+data/
+checkpoints/
+*.pt
+*.h5
+*.npy
+*.csv
+*.pdf
